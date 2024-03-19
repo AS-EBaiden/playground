@@ -9,7 +9,7 @@ const root = createRoot(rootElement);
 
 root.render(
   <StrictMode>
-    <App />
-    {/* <Sample /> */}
+    {/* <App /> */}
+    <Sample />
   </StrictMode>
 );
