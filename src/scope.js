@@ -20,7 +20,7 @@
 //     console.log(key),
 //   }
 // }
-
+import { Form, Formik } from "formik";
 import {
   $,
   $$,
@@ -60,7 +60,7 @@ import {
   Flex,
   FloatingTile,
   Footer,
-  Form,
+  // Form,
   FormGroup,
   GlobalStyle,
   H1,
@@ -207,6 +207,7 @@ export const scope = {
   FloatingTile,
   Footer,
   Form,
+  Formik,
   FormGroup,
   GlobalStyle,
   H1,
