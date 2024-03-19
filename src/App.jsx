@@ -10,8 +10,8 @@ const App = () => {
   return (
     <AffinityProvider theme={theme}>
       <GlobalStyle />
-      {/* <ContainerSection /> */}
-      <Contain />
+      <ContainerSection />
+      {/* <Contain /> */}
     </AffinityProvider>
   );
 };
