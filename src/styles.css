@@ -1,0 +1,11 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+pre.prism-code.language-tsx{
+  height: 100vh !important;
+  width: 330px;
+  overflow: auto;
+  position: fixed;
+}
