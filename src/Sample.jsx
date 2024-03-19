@@ -11,53 +11,52 @@ const StyledDiv = styled("div")``;
 
 export default function Sample() {
   const scope = {
-    ...bob,
-    Form,
-    Formik,
+    ContainerSection,
   };
 
-  const code = `
-  () => {
-    const variable="Project";
-    return (
-      <Container>
-        <Box        
-          borderRadius={4}
-          gradient="heroBlue"
-          typeStyle="displayLarge"
-          textAlign="center"
-          color="white"
-        >
-          Your Starter {variable}
-        </Box>
-        <Formik
-          initialValues={{
-            input: "",
-          }}
-          onSubmit={async () => {
-            await sleep(2000);
-            alert("submitted");
-          }}
-        >
-          {(formProps) => (
-            <Form>
-              <FormGroup id="input" bg="muted" p={4} borderRadius={1}>
-                <FormGroup.Label>Label</FormGroup.Label>
-                <FormGroup.InputGroup borderRadius="full">
-                  <FormGroup.InputGroup.Input placeholder="I am a text input" />
-                </FormGroup.InputGroup>
-                <FormGroup.Caption />
-              </FormGroup>
-              <SubmitButton id="SubmitButton--test" formikProps={formProps} rounded />
-              <pre>{JSON.stringify(formProps.values, null, 2)}</pre>
-            </Form>
-          )}
-        </Formik>
-      </Container>
-    );
-  }
-  `;
+  //   const code = `
+  //   () => {
+  //     const variable="Project";
+  //     return (
+  //       <Container>
+  //         <Box
+  //           borderRadius={4}
+  //           gradient="heroBlue"
+  //           typeStyle="displayLarge"
+  //           textAlign="center"
+  //           color="white"
+  //         >
+  //           Your Starter {variable}
+  //         </Box>
+  //         <Formik
+  //           initialValues={{
+  //             input: "",
+  //           }}
+  //           onSubmit={async () => {
+  //             await sleep(2000);
+  //             alert("submitted");
+  //           }}
+  //         >
+  //           {(formProps) => (
+  //             <Form>
+  //               <FormGroup id="input" bg="muted" p={4} borderRadius={1}>
+  //                 <FormGroup.Label>Label</FormGroup.Label>
+  //                 <FormGroup.InputGroup borderRadius="full">
+  //                   <FormGroup.InputGroup.Input placeholder="I am a text input" />
+  //                 </FormGroup.InputGroup>
+  //                 <FormGroup.Caption />
+  //               </FormGroup>
+  //               <SubmitButton id="SubmitButton--test" formikProps={formProps} rounded />
+  //               <pre>{JSON.stringify(formProps.values, null, 2)}</pre>
+  //             </Form>
+  //           )}
+  //         </Formik>
+  //       </Container>
+  //     );
+  //   }
+  //   `;
 
+  const code = `<ContainerSection />`;
   return (
     <div style={{ display: "inline-flex", width: "100%" }}>
       <AffinityProvider theme={theme}>
