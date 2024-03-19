@@ -1,21 +1,13 @@
 import React from "react";
 import * as bob from "@allied-solutions/affinity";
-import {
-  AffinityProvider,
-  GlobalStyle,
-  Button,
-} from "@allied-solutions/affinity";
+import { AffinityProvider, GlobalStyle } from "@allied-solutions/affinity";
 import { LiveProvider, LiveEditor, LiveError, LivePreview } from "react-live";
 import { Form, Formik } from "formik";
 import theme from "./theme";
 import ContainerSection from "./ContainerSection";
 import styled from "styled-components";
-
+import { scope } from "./scope";
 export default function Sample() {
-  const scope = {
-    Button,
-  };
-
   //   const code = `
   //   () => {
   //     const variable="Project";
