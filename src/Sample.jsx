@@ -7,10 +7,9 @@ import theme from "./theme";
 import ContainerSection from "./ContainerSection";
 import styled from "styled-components";
 
-const StyledDiv = styled("div")``;
-
 export default function Sample() {
   const scope = {
+    ...bob,
     ContainerSection,
   };
 
