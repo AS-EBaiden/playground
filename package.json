@@ -1,6 +1,7 @@
 {
   "name": "react",
   "version": "1.0.0",
+  "homepage": "playground",
   "description": "",
   "keywords": [],
   "main": "src/index.tsx",
@@ -9,6 +10,7 @@
     "@allied-solutions/affinity-sd": "^9.2.0",
     "@react-spring/web": "9",
     "formik": "2",
+    "gh-pages": "^6.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-live": "^4.1.6",
@@ -26,7 +28,9 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "browserslist": [
     ">0.2%",
