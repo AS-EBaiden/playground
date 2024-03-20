@@ -9,7 +9,7 @@
     "node": ">=18.0.0"
   },
   "dependencies": {
-    "@allied-solutions/affinity": "^9.2.0",
+    "@allied-solutions/affinity": "9.3.0",
     "@allied-solutions/affinity-sd": "^9.2.0",
     "@react-spring/web": "9",
     "formik": "2",
