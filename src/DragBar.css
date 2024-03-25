@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    /* margin:-8px; */
+  }
+  
+  .code-panel,
+  .preview-panel {
+    overflow-y: auto;
+  }
+  
+  .code-panel {
+    background-color: rgb(1, 22, 39);
+    resize: horizontal;
+    /* overflow: hidden; */
+    padding: 10px;
+    min-width: 200px;
+  }
+  
+  .drag-bar {
+    width: 10px;
+    cursor: ew-resize;
+    background-color: #ddd;
+    z-index: 10;
+  }
+  
+  .preview-panel {
+    background-color: #fff;
+    padding: 10px;
+  }
+
+
+  body pre.prism-code.language-tsx {
+    height: unset !important;
+    width: unset !important;
+    overflow: unset !important;
+    position: unset !important;
+  }
+  

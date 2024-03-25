@@ -5,13 +5,15 @@ import React from "react";
 import theme from "./theme";
 import ContainerSection from "./ContainerSection";
 import Contain from "./Contain";
+import Happy from "./Happy";
 const App = () => {
   const [value, setValue] = React.useState(5);
   return (
     <AffinityProvider theme={theme}>
       <GlobalStyle />
-      <ContainerSection />
+      {/* <ContainerSection /> */}
       {/* <Contain /> */}
+      <Happy />
     </AffinityProvider>
   );
 };
